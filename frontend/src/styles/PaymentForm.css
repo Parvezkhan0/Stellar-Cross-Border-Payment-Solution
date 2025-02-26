@@ -1,0 +1,73 @@
+.payment-form-container {
+  padding: 1rem 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.payment-form {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.custom-asset-input {
+  margin-top: 0.8rem;
+}
+
+.submit-button {
+  background-color: var(--primary-color);
+  color: white;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background-color: var(--primary-dark);
+}
+
+.form-error {
+  color: var(--error-color);
+  padding: 1rem;
+  background-color: rgba(231, 76, 60, 0.1);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.form-success {
+  color: var(--success-color);
+  padding: 1rem;
+  background-color: rgba(46, 204, 113, 0.1);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}

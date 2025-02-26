@@ -1,0 +1,53 @@
+.account-creator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.creator-card {
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.creator-info {
+  margin-bottom: 2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.create-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.2s;
+}
+
+.create-button:hover {
+  background-color: var(--primary-dark);
+}
+
+.creator-note {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.error-message {
+  color: var(--error-color);
+  background-color: rgba(231, 76, 60, 0.1);
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}

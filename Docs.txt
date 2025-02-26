@@ -1,0 +1,133 @@
+### ISSUER
+
+PUBLIC_KEY: GAEWQG4GDXDULTMKOLUX4QPFZYDPNKTRHE2Z7TOVLUKPJL4S4TLEX3MD
+
+PRIVATE_KEY:SCQD7MFY6L3NOLBFAUOJ7EVHAYDQ5QIZZQFPDHUYLPWO4BQ2S24LVVLB
+
+
+
+### SENDER
+
+PUBLIC_KEY:GAVSPN3M4XK4H4WJLMF34R47NH6L4LGTI6SBPCY6K3OGEAGHFSSQAHNA
+
+PRIVATE_KEY:SDL2GY2FZ3VXKCYTCIRIW6QCBJODHVFQ5L2KOKBMHH6KOB2JEYW2R62I
+
+
+
+### RECIEVER
+
+PUBLIC_KEY:GBAQH5GBJ33CICK55UIPK45LYCSBIGLST37OAVZSVESKQ5DECWUT2L7B
+
+PRIVATE_KEY:SDVBKJYPSHXQWXC7ADMMMOCVEPVXZFQAFOGIACNHBXN4E5KMO5DTSOTE
+
+
+
+
+// Project structure
+
+stellar-cross-border-app/
+├── backend/
+│   ├── server.js
+│   ├── stellar-service.js
+│   └── package.json
+└── frontend/
+    ├── public/
+    │   ├── index.html
+    │   └── ...
+    ├── src/
+    │   ├── components/
+    │   │   ├── AccountCreator.js
+    │   │   ├── AccountDetails.js
+    │   │   ├── Dashboard.js
+    │   │   ├── NavBar.js
+    │   │   ├── PaymentForm.js
+    │   │   └── TrustlineForm.js
+    │   ├── services/
+    │   │   └── api.js
+    │   ├── styles/
+    │   │   ├── App.css
+    │   │   ├── AccountCreator.css
+    │   │   ├── AccountDetails.css
+    │   │   ├── Dashboard.css
+    │   │   ├── NavBar.css
+    │   │   ├── PaymentForm.css
+    │   │   └── TrustlineForm.css
+    │   ├── App.js
+    │   └── index.js
+    └── package.json
+
+
+
+STEPS TO FOLLOW
+
+Run the Application
+
+Start the backend server:
+cd backend
+npm install
+npm run dev
+
+In a new terminal window, start the frontend:
+cd frontend
+npm install
+npm start
+
+Your browser should automatically open to http://localhost:3000 where you can interact with the application.
+
+How to Use the Application
+
+Create a Test Account: Or Import it:
+
+When you first open the app, you'll see the Account Creator screen.
+Click "Create New Account" to create a Stellar test account.
+The application will store your account details in localStorage.
+
+Click "Import Account" to Import a Stellar test account.
+
+PLEASE SAVE BOTH KEY OF ALL ACCOUNTS AND NAME THEM LIKE SENDER, RECIEVER AND ISSUER FOR BETTER MANAGEMENT
+
+Dashboard:
+
+View your account balance and recent transactions.
+The dashboard auto-refreshes every 30 seconds.
+
+
+Account Details:
+
+View your public key and secret key.
+Manage your trustlines.
+
+
+Send Payments:
+
+Enter the recipient's Stellar address.
+Specify the amount and asset to send.
+For assets other than XLM, you'll need to provide the asset issuer.
+
+
+Create Trustlines:
+
+1. Create a custom asset with issuer account with name like "NEW"
+
+2.1 login with Sender accout Establish trust for NEW asset put New and Issuer's Public address
+2.2 login with Reciever accout Establish trust for NEW asset put New and Issuer's Public address
+
+3. login with isuuer account and issue a ammount of New to sender or reciever's public key 
+
+4. After that sender and reciever can make transaction using NEW
+
+
+Notes
+
+This is a Proof of Concept running on Stellar's Testnet.
+For a production environment, you would need to:
+
+Switch to Stellar Mainnet (change TESTNET to PUBLIC in the backend code)
+Implement proper security measures for secret key storage
+Add comprehensive error handling and validation
+Set up proper user authentication
+Implement thorough transaction monitoring and reporting
+
+
+
+The application showcases the core functionality of Stellar for cross-border payments, including account creation, sending payments in various currencies, and managing trustlines for different assets.
