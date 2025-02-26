@@ -2,8 +2,6 @@
 
 A full-stack application leveraging the Stellar blockchain to facilitate seamless cross-border payments and asset transfers with minimal fees and near-instant settlement.
 
-![Stellar Network](https://stellar.org/assets/stellar-logo.png)
-
 ## 🌟 Overview
 
 This application demonstrates how Stellar's blockchain infrastructure can revolutionize international payments by:
